@@ -7,7 +7,7 @@
   <meta name="description" content="Κουρείο εμπνευσμένο από την Αναγέννηση στο Γαλάτσι, Αθήνα. Κουρέματα, περιποίηση και αισθητική από το 2020.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,39 +20,47 @@
         <span></span>
         <span></span>
       </button>
-      <ul class="nav-links">
-        <li><a href="#about">Σχετικά</a></li>
-        <li><a href="#services">Υπηρεσίες</a></li>
-        <li><a href="#team">Ομάδα</a></li>
-        <li><a href="#gallery">Γκαλερί</a></li>
-        <li><a href="#contact">Επικοινωνία</a></li>
-        <li><a href="https://1511stanzadellabarberia.setmore.com/" target="_blank" rel="noopener" class="nav-cta">Κράτηση</a></li>
-      </ul>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#about">Σχετικά</a></li>
+          <li><a href="#services">Υπηρεσίες</a></li>
+          <li><a href="#team">Ομάδα</a></li>
+          <li><a href="#gallery">Γκαλερί</a></li>
+          <li><a href="#contact">Επικοινωνία</a></li>
+        </ul>
+        <a href="https://1511stanzadellabarberia.setmore.com/" target="_blank" rel="noopener" class="btn btn-sm">Κράτηση</a>
+      </div>
     </div>
   </nav>
 
   <!-- Hero -->
   <section id="hero">
-    <div class="hero-content">
-      <img src="images/logo.png" alt="1511 Stanza Della Barberia" class="hero-logo">
-      <p class="hero-tagline">Περιποίηση εμπνευσμένη από την Αναγέννηση στην καρδιά της Αθήνας</p>
-      <a href="https://1511stanzadellabarberia.setmore.com/" target="_blank" rel="noopener" class="btn">Κλείσε Ραντεβού</a>
+    <img src="images/logo.png" alt="1511 Stanza Della Barberia" class="hero-logo">
+    <div class="hero-tagline-row">
+      <img src="images/clippers.png" alt="" class="hero-clippers hero-clippers-left">
+      <p class="hero-tagline">
+        <span>Where</span>
+        <span>excellence</span>
+        <span>meets</span>
+        <span>style</span>
+      </p>
+      <img src="images/clippers.png" alt="" class="hero-clippers hero-clippers-right">
     </div>
-    <div class="hero-scroll">
-      <span></span>
-    </div>
+    <div class="hero-line"></div>
   </section>
 
   <!-- About -->
   <section id="about">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-image">
-          <img src="images/rennaisance.jpg" alt="Η Σχολή των Αθηνών του Ραφαήλ" loading="lazy">
+      <div class="about-layout">
+        <div class="about-img-col">
+          <div class="about-img accent-border">
+            <img src="images/rennaisance.jpg" alt="Η Σχολή των Αθηνών του Ραφαήλ" loading="lazy">
+          </div>
         </div>
-        <div class="about-text">
+        <div class="about-text-col">
           <span class="label">Από το 2020</span>
-          <h2>Γνωρίστε Μας</h2>
+          <h2>Γνωρίστε <em>Μας</em></h2>
           <p>Η δημιουργία ενός barbershop ήταν ένα όνειρο το οποίο έγινε πραγματικότητα το 2020 με την ονομασία 1511 Stanza Della Barberia.</p>
           <p>Το 1511 Stanza Della Barberia εμπνευσμένο από την Καπέλα Σιξτίνα του Βατικανού έχει ένα ιδιαίτερα αναγεννησιακό χαρακτήρα και ήρθε για να φέρει την new school εκδοχή των old school barbershop's.</p>
           <p>Είναι ένας χώρος, ο οποίος δημιουργήθηκε αποκλειστικά για την περιποίηση του άντρα και κρατάει την ταυτότητα του καλύπτοντας όλες του τις σύγχρονες ανάγκες.</p>
@@ -61,11 +69,28 @@
     </div>
   </section>
 
+  <!-- Atmosphere -->
+  <section id="atmosphere">
+    <div class="container">
+      <div class="atmo-layout">
+        <div class="atmo-img accent-border">
+          <img src="images/DSC01355.jpg.JPG" alt="Λεπτομέρεια ξυραφιού" loading="lazy">
+        </div>
+        <div class="atmo-text">
+          <h2>Χαλαρή Ατμόσφαιρα,<br>Ικανοί Κουρείς,<br><em>Ποιοτικά Κουρέματα</em></h2>
+          <p>Κάθε λεπτομέρεια στον χώρο μας είναι σχεδιασμένη για να σε κάνει να νιώσεις ότι μπήκες σε κάτι ξεχωριστό. Όχι απλά ένα κούρεμα. Μια εμπειρία.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Services -->
   <section id="services">
     <div class="container">
-      <span class="label">Τι Προσφέρουμε</span>
-      <h2>Υπηρεσίες</h2>
+      <div class="section-header-center">
+        <span class="label">Τι Προσφέρουμε</span>
+        <h2>Υπηρεσίες</h2>
+      </div>
       <div class="services-list">
         <div class="service-item">
           <div class="service-row">
@@ -146,47 +171,41 @@
     </div>
   </section>
 
-  <!-- Team -->
-  <section id="team">
+  <!-- Reviews -->
+  <section id="reviews">
     <div class="container">
-      <span class="label">Οι Καλλιτέχνες</span>
-      <h2>Η Ομάδα Μας</h2>
-      <div class="team-grid">
-        <div class="team-member">
-          <div class="team-photo">
-            <img src="images/IMG_5908.jpeg" alt="Αλέξανδρος" loading="lazy">
-          </div>
-          <h4>Αλέξανδρος</h4>
-          <p>Κουρέας</p>
+      <div class="reviews-header">
+        <div>
+          <span class="label">Google Reviews</span>
+          <h2>Τι Λένε οι <em>Πελάτες</em></h2>
         </div>
-        <div class="team-member">
-          <div class="team-photo">
-            <img src="images/IMG_8407.jpeg" alt="Νίκος" loading="lazy">
+        <div class="reviews-score">
+          <span class="score-number">4.8</span>
+          <div class="score-meta">
+            <div class="score-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <span class="score-count">160+ αξιολογήσεις</span>
           </div>
-          <h4>Νίκος</h4>
-          <p>Κουρέας</p>
         </div>
-        <div class="team-member">
-          <div class="team-photo">
-            <img src="images/IMG_0420.jpg" alt="Aleks" loading="lazy">
-          </div>
-          <h4>Aleks</h4>
-          <p>Ιδρυτής & Master Barber</p>
-        </div>
-        <div class="team-member">
-          <div class="team-photo team-placeholder">
-            <span>Ε</span>
-          </div>
-          <h4>Ελευθερία</h4>
-          <p>Κουρέας & Αισθητικός</p>
-        </div>
-        <div class="team-member">
-          <div class="team-photo">
-            <img src="images/78AFB4B1-7401-4252-8395-367653C9338E.JPG" alt="Jessica" loading="lazy">
-          </div>
-          <h4>Jessica</h4>
-          <p>Υποδοχή</p>
-        </div>
+      </div>
+      <div class="reviews-grid">
+        <blockquote class="review">
+          <p>Καταπληκτικός χώρος, ευγενική και φιλική εξυπηρέτηση, τήρηση ραντεβού χωρίς αναμονή, πολύ καλό κούρεμα-ξύρισμα.</p>
+        </blockquote>
+        <blockquote class="review">
+          <p>Εξαιρετικός και πολύ ευχάριστος χώρος, η εξυπηρέτηση άψογη. Ο Αλεξ είναι καταπληκτικός.</p>
+        </blockquote>
+        <blockquote class="review">
+          <p>Απίστευτα εξυπηρετικοί και ευχάριστοι!! Ένα από τα καλύτερα Barber πού θα βρείτε στην Αθήνα!</p>
+        </blockquote>
+        <blockquote class="review">
+          <p>Τα παιδιά παίρνουν άριστα σε όλα. Το περιβάλλον, η μουσική, η εξυπηρέτηση, ο επαγγελματισμός.</p>
+        </blockquote>
+        <blockquote class="review">
+          <p>Άριστος επαγγελματίας και καλλιτέχνης και τυπικός στα ραντεβού του. Το καλύτερο κομμωτήριο της πόλης.</p>
+        </blockquote>
+        <blockquote class="review">
+          <p>Πανέμορφο μαγαζί, τρομεροί κομμωτές, πεντακάθαρο και πολύ φιλικό κλίμα!</p>
+        </blockquote>
       </div>
     </div>
   </section>
@@ -194,23 +213,85 @@
   <!-- Gallery -->
   <section id="gallery">
     <div class="container">
-      <span class="label">Η Δουλειά Μας</span>
-      <h2>Γκαλερί</h2>
-      <div class="gallery-grid">
-        <div class="gallery-item gallery-wide">
+      <div class="section-header-center">
+        <span class="label">Η Δουλειά Μας</span>
+        <h2>Fresh Cuts <em>in Action</em></h2>
+      </div>
+      <div class="gallery-strip">
+        <div class="gallery-card accent-border">
           <img src="images/DSC01351.jpg.JPG" alt="Περιποίηση γενειάδας" loading="lazy">
         </div>
-        <div class="gallery-item gallery-tall">
-          <img src="images/DSC01355.jpg.JPG" alt="Λεπτομέρεια ξυραφιού" loading="lazy">
-        </div>
-        <div class="gallery-item gallery-wide">
+        <div class="gallery-card">
           <img src="images/DSC01524-2.jpg.JPG" alt="Τεχνική ψαλιδιού" loading="lazy">
         </div>
-        <div class="gallery-item gallery-tall">
+        <div class="gallery-card accent-border">
           <img src="images/DSC01560-3.jpg.JPG" alt="Σχηματισμός φρυδιών" loading="lazy">
         </div>
-        <div class="gallery-item gallery-tall">
+        <div class="gallery-card">
           <img src="images/DSC01487-2.jpg.jpg" alt="Υποδοχή" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="label">Οι Καλλιτέχνες</span>
+        <h2>Η Ομάδα <em>Μας</em></h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="team-photo accent-border">
+            <img src="images/IMG_5908.jpeg" alt="Αλέξανδρος" loading="lazy">
+          </div>
+          <span class="team-name-small">Αλέξανδρος</span>
+          <h4>Κουρέας</h4>
+        </div>
+        <div class="team-member">
+          <div class="team-photo">
+            <img src="images/IMG_8407.jpeg" alt="Νίκος" loading="lazy">
+          </div>
+          <span class="team-name-small">Νίκος</span>
+          <h4>Κουρέας</h4>
+        </div>
+        <div class="team-member">
+          <div class="team-photo accent-border">
+            <img src="images/IMG_0420.jpg" alt="Aleks" loading="lazy">
+          </div>
+          <span class="team-name-small">Aleks</span>
+          <h4>Ιδρυτής &<br>Master Barber</h4>
+        </div>
+        <div class="team-member">
+          <div class="team-photo team-placeholder">
+            <span>Ε</span>
+          </div>
+          <span class="team-name-small">Ελευθερία</span>
+          <h4>Κουρέας &<br>Αισθητικός</h4>
+        </div>
+        <div class="team-member">
+          <div class="team-photo">
+            <img src="images/78AFB4B1-7401-4252-8395-367653C9338E.JPG" alt="Jessica" loading="lazy">
+          </div>
+          <span class="team-name-small">Jessica</span>
+          <h4>Υποδοχή</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking CTA -->
+  <section id="booking">
+    <div class="container">
+      <div class="booking-layout">
+        <div class="booking-text">
+          <h2>Κράτηση &mdash;<br>Χωρίς Ταλαιπωρία,<br><em>Μόνο ένα Click</em></h2>
+          <p>Διάλεξε ημερομηνία, επέλεξε τον κουρέα σου και κλείσε τη θέση σου.</p>
+          <a href="https://1511stanzadellabarberia.setmore.com/" target="_blank" rel="noopener" class="btn">Κλείσε Ραντεβού</a>
+        </div>
+        <div class="booking-img accent-border">
+          <img src="images/DSC01351.jpg.JPG" alt="Barbershop" loading="lazy">
         </div>
       </div>
     </div>
@@ -270,31 +351,31 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <p class="footer-brand-name">1511 Stanza Della Barberia</p>
-          <p class="footer-tagline">Περιποίηση εμπνευσμένη από την Αναγέννηση από το 2020</p>
+          <p class="footer-brand-name">Stay<br>Connected!</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/1511stanzadelbarbiere/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100058823749502" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
         </div>
         <div class="footer-columns">
           <div class="footer-col">
+            <h5>Υπηρεσίες</h5>
+            <ul>
+              <li>Ανδρικό Κούρεμα & Styling</li>
+              <li>Περιποίηση Γενειάδας</li>
+              <li>Ξύρισμα Special</li>
+            </ul>
+          </div>
+          <div class="footer-col">
             <h5>Επικοινωνία</h5>
             <ul>
+              <li>Κουντουριώτου 100, Γαλάτσι</li>
               <li><a href="tel:+302114175192">(+30) 211 417 5192</a></li>
-              <li><a href="tel:+306984875827">(+30) 698 487 5827</a></li>
               <li><a href="mailto:1511stanzadellabarberia@gmail.com">1511stanzadellabarberia@gmail.com</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h5>Διεύθυνση</h5>
-            <ul>
-              <li>Κουντουριώτου 100</li>
-              <li>Γαλάτσι, Αθήνα</li>
-              <li>Ελλάδα</li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h5>Social</h5>
-            <ul>
-              <li><a href="https://www.instagram.com/1511stanzadelbarbiere/" target="_blank" rel="noopener">Instagram</a></li>
-              <li><a href="https://www.facebook.com/profile.php?id=100058823749502" target="_blank" rel="noopener">Facebook</a></li>
             </ul>
           </div>
         </div>
@@ -324,10 +405,8 @@
       </div>
       <div class="modal-body">
         <p>Τελευταία ενημέρωση: Ιανουάριος 2025</p>
-
         <h4>1. Πληροφορίες που Συλλέγουμε</h4>
         <p>Όταν κλείνετε ραντεβού ή επικοινωνείτε μαζί μας, ενδέχεται να συλλέξουμε το όνομά σας, τον αριθμό τηλεφώνου και τη διεύθυνση email σας. Αυτές οι πληροφορίες χρησιμοποιούνται αποκλειστικά για τη διαχείριση των ραντεβού σας και την επικοινωνία μαζί σας σχετικά με τις υπηρεσίες μας.</p>
-
         <h4>2. Πώς Χρησιμοποιούμε τις Πληροφορίες σας</h4>
         <p>Χρησιμοποιούμε τα προσωπικά σας δεδομένα για:</p>
         <ul>
@@ -336,19 +415,14 @@
           <li>Απάντηση στα ερωτήματά σας</li>
           <li>Βελτίωση των υπηρεσιών μας</li>
         </ul>
-
         <h4>3. Κοινοποίηση Δεδομένων</h4>
         <p>Δεν πουλάμε, ανταλλάσσουμε ή μεταφέρουμε με οποιονδήποτε τρόπο τα προσωπικά σας δεδομένα σε τρίτους. Τα δεδομένα σας ενδέχεται να κοινοποιηθούν στον πάροχο της πλατφόρμας κρατήσεών μας αποκλειστικά για τον σκοπό της διαχείρισης ραντεβού.</p>
-
         <h4>4. Ασφάλεια Δεδομένων</h4>
         <p>Εφαρμόζουμε κατάλληλα μέτρα ασφαλείας για την προστασία των προσωπικών σας πληροφοριών. Ωστόσο, καμία μέθοδος ηλεκτρονικής μετάδοσης ή αποθήκευσης δεν είναι 100% ασφαλής.</p>
-
         <h4>5. Cookies</h4>
         <p>Ο ιστότοπός μας ενδέχεται να χρησιμοποιεί cookies για τη βελτίωση της εμπειρίας περιήγησής σας. Μπορείτε να απενεργοποιήσετε τα cookies μέσω των ρυθμίσεων του προγράμματος περιήγησής σας.</p>
-
         <h4>6. Τα Δικαιώματά σας</h4>
         <p>Έχετε το δικαίωμα πρόσβασης, διόρθωσης ή διαγραφής των προσωπικών σας δεδομένων. Για να ασκήσετε αυτά τα δικαιώματα, επικοινωνήστε μαζί μας στο <a href="mailto:1511stanzadellabarberia@gmail.com">1511stanzadellabarberia@gmail.com</a>.</p>
-
         <h4>7. Επικοινωνία</h4>
         <p>Για οποιαδήποτε ερώτηση σχετικά με αυτήν την πολιτική απορρήτου, επικοινωνήστε μαζί μας:</p>
         <p>1511 Stanza Della Barberia<br>Κουντουριώτου 100, Γαλάτσι, Αθήνα<br>Email: <a href="mailto:1511stanzadellabarberia@gmail.com">1511stanzadellabarberia@gmail.com</a><br>Τηλ: <a href="tel:+302114175192">(+30) 211 417 5192</a></p>

@@ -5,7 +5,9 @@
       "WebFetch(domain:web.archive.org)",
       "WebSearch",
       "WebFetch(domain:originalhairbusiness.com)",
-      "WebFetch(domain:vres.guide)"
+      "WebFetch(domain:vres.guide)",
+      "WebFetch(domain:cdn.dribbble.com)",
+      "WebFetch(domain:citymaps.gr)"
     ]
   }
 }

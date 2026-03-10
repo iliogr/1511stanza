@@ -4,22 +4,15 @@
 
 const nav = document.getElementById('nav');
 const toggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
+const navRight = document.querySelector('.nav-right');
 let lastScroll = 0;
 
-// Hide/show nav on scroll
 window.addEventListener('scroll', () => {
   const current = window.scrollY;
 
-  if (current > 100) {
-    nav.classList.add('scrolled');
-  } else {
-    nav.classList.remove('scrolled');
-  }
-
   if (current > lastScroll && current > 200) {
     nav.classList.add('hidden');
-    navLinks.classList.remove('open');
+    navRight.classList.remove('open');
     toggle.classList.remove('active');
   } else {
     nav.classList.remove('hidden');
@@ -28,16 +21,14 @@ window.addEventListener('scroll', () => {
   lastScroll = current;
 });
 
-// Mobile toggle
 toggle.addEventListener('click', () => {
   toggle.classList.toggle('active');
-  navLinks.classList.toggle('open');
+  navRight.classList.toggle('open');
 });
 
-// Close mobile nav on link click
-navLinks.querySelectorAll('a').forEach(link => {
+navRight.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
+    navRight.classList.remove('open');
     toggle.classList.remove('active');
   });
 });
@@ -47,11 +38,14 @@ navLinks.querySelectorAll('a').forEach(link => {
 // =========================
 
 const revealElements = document.querySelectorAll(
-  '#about .about-text, #about .about-image,' +
-  '#services .services-list,' +
-  '#team .team-member,' +
-  '#gallery .gallery-item,' +
-  '#contact .contact-info, #contact .contact-map'
+  '.hero-text, .hero-images,' +
+  '.about-img-col, .about-text-col,' +
+  '.atmo-img, .atmo-text,' +
+  '.services-list,' +
+  '.gallery-card,' +
+  '.team-member,' +
+  '.booking-text, .booking-img,' +
+  '.contact-info, .contact-map'
 );
 
 revealElements.forEach(el => el.classList.add('reveal'));
@@ -65,17 +59,17 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+  { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
 );
 
 revealElements.forEach(el => observer.observe(el));
 
-// Stagger team members and gallery items
+// Stagger
 document.querySelectorAll('.team-member').forEach((el, i) => {
-  el.style.transitionDelay = `${i * 0.1}s`;
+  el.style.transitionDelay = `${i * 0.08}s`;
 });
 
-document.querySelectorAll('.gallery-item').forEach((el, i) => {
+document.querySelectorAll('.gallery-card').forEach((el, i) => {
   el.style.transitionDelay = `${i * 0.1}s`;
 });
 
@@ -97,7 +91,7 @@ document.body.appendChild(lightbox);
 
 const lightboxImg = lightbox.querySelector('img');
 
-document.querySelectorAll('.gallery-item img').forEach(img => {
+document.querySelectorAll('.gallery-card img').forEach(img => {
   img.addEventListener('click', () => {
     lightboxImg.src = img.src;
     lightboxImg.alt = img.alt;
@@ -144,7 +138,7 @@ privacyModal.addEventListener('click', e => {
 document.getElementById('year').textContent = new Date().getFullYear();
 
 // =========================
-// Escape Key (Lightbox + Modal)
+// Escape Key
 // =========================
 
 document.addEventListener('keydown', e => {
