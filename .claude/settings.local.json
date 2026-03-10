@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.1511stanzadellabarberia.com)",
+      "WebFetch(domain:web.archive.org)",
+      "WebSearch",
+      "WebFetch(domain:originalhairbusiness.com)",
+      "WebFetch(domain:vres.guide)"
+    ]
+  }
+}
