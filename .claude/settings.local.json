@@ -7,7 +7,17 @@
       "WebFetch(domain:originalhairbusiness.com)",
       "WebFetch(domain:vres.guide)",
       "WebFetch(domain:cdn.dribbble.com)",
-      "WebFetch(domain:citymaps.gr)"
+      "WebFetch(domain:citymaps.gr)",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "Bash(curl -s http://localhost:8771/index.html | head -3)",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "mcp__plugin_playwright_playwright__browser_console_messages",
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(gh api:*)",
+      "Bash(gh repo:*)"
     ]
   }
 }
