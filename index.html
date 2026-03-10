@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
 </head>
 <body>
 
@@ -36,50 +37,68 @@
   <!-- Hero -->
   <section id="hero">
     <img src="images/logo.png" alt="1511 Stanza Della Barberia" class="hero-logo">
+    <div class="hero-scissors-wrapper">
+      <div class="hero-scissors-line"></div>
+      <div class="hero-scissors" id="hero-scissors"></div>
+    </div>
     <div class="hero-tagline-row">
-      <img src="images/clippers.png" alt="" class="hero-clippers hero-clippers-left">
       <p class="hero-tagline">
         <span>Where</span>
         <span>excellence</span>
         <span>meets</span>
         <span>style</span>
       </p>
-      <img src="images/clippers.png" alt="" class="hero-clippers hero-clippers-right">
     </div>
     <div class="hero-line"></div>
-  </section>
-
-  <!-- About -->
-  <section id="about">
-    <div class="container">
-      <div class="about-layout">
-        <div class="about-img-col">
-          <div class="about-img accent-border">
-            <img src="images/rennaisance.jpg" alt="Η Σχολή των Αθηνών του Ραφαήλ" loading="lazy">
-          </div>
-        </div>
-        <div class="about-text-col">
-          <span class="label">Από το 2020</span>
-          <h2>Γνωρίστε <em>Μας</em></h2>
-          <p>Η δημιουργία ενός barbershop ήταν ένα όνειρο το οποίο έγινε πραγματικότητα το 2020 με την ονομασία 1511 Stanza Della Barberia.</p>
-          <p>Το 1511 Stanza Della Barberia εμπνευσμένο από την Καπέλα Σιξτίνα του Βατικανού έχει ένα ιδιαίτερα αναγεννησιακό χαρακτήρα και ήρθε για να φέρει την new school εκδοχή των old school barbershop's.</p>
-          <p>Είναι ένας χώρος, ο οποίος δημιουργήθηκε αποκλειστικά για την περιποίηση του άντρα και κρατάει την ταυτότητα του καλύπτοντας όλες του τις σύγχρονες ανάγκες.</p>
-        </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow">
+        <svg width="16" height="24" viewBox="0 0 16 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <line x1="8" y1="0" x2="8" y2="20"/>
+          <polyline points="2,14 8,20 14,14"/>
+        </svg>
       </div>
     </div>
   </section>
 
-  <!-- Atmosphere -->
-  <section id="atmosphere">
-    <div class="container">
-      <div class="atmo-layout">
-        <div class="atmo-img accent-border">
-          <img src="images/DSC01355.jpg.JPG" alt="Λεπτομέρεια ξυραφιού" loading="lazy">
-        </div>
-        <div class="atmo-text">
-          <h2>Χαλαρή Ατμόσφαιρα,<br>Ικανοί Κουρείς,<br><em>Ποιοτικά Κουρέματα</em></h2>
-          <p>Κάθε λεπτομέρεια στον χώρο μας είναι σχεδιασμένη για να σε κάνει να νιώσεις ότι μπήκες σε κάτι ξεχωριστό. Όχι απλά ένα κούρεμα. Μια εμπειρία.</p>
-        </div>
+  <!-- Marquee Ticker -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Renaissance Grooming</span>
+      <span class="marquee-dot"></span>
+      <span>Est. 2020</span>
+      <span class="marquee-dot"></span>
+      <span>Galatsi, Athens</span>
+      <span class="marquee-dot"></span>
+      <span>Sistine Chapel Inspired</span>
+      <span class="marquee-dot"></span>
+      <span>Where Excellence Meets Style</span>
+      <span class="marquee-dot"></span>
+      <span>Renaissance Grooming</span>
+      <span class="marquee-dot"></span>
+      <span>Est. 2020</span>
+      <span class="marquee-dot"></span>
+      <span>Galatsi, Athens</span>
+      <span class="marquee-dot"></span>
+      <span>Sistine Chapel Inspired</span>
+      <span class="marquee-dot"></span>
+      <span>Where Excellence Meets Style</span>
+      <span class="marquee-dot"></span>
+    </div>
+  </div>
+
+  <!-- About — Cinematic Split -->
+  <section id="about" class="cin-section">
+    <div class="cin-image-half">
+      <img src="images/rennaisance.jpg" alt="Η Σχολή των Αθηνών του Ραφαήλ" loading="lazy">
+    </div>
+    <div class="cin-text-half">
+      <div class="cin-text-inner">
+        <span class="label">Από το 2020</span>
+        <h2 class="reveal-text">Γνωρίστε <em>Μας</em></h2>
+        <p class="reveal-up">Η δημιουργία ενός barbershop ήταν ένα όνειρο το οποίο έγινε πραγματικότητα το 2020 με την ονομασία 1511 Stanza Della Barberia.</p>
+        <p class="reveal-up">Το 1511 Stanza Della Barberia εμπνευσμένο από την Καπέλα Σιξτίνα του Βατικανού έχει ένα ιδιαίτερα αναγεννησιακό χαρακτήρα και ήρθε για να φέρει την new school εκδοχή των old school barbershop's.</p>
+        <p class="reveal-up">Είναι ένας χώρος, ο οποίος δημιουργήθηκε αποκλειστικά για την περιποίηση του άντρα και κρατάει την ταυτότητα του καλύπτοντας όλες του τις σύγχρονες ανάγκες.</p>
       </div>
     </div>
   </section>
@@ -88,10 +107,10 @@
   <section id="services">
     <div class="container">
       <div class="section-header-center">
-        <span class="label">Τι Προσφέρουμε</span>
-        <h2>Υπηρεσίες</h2>
+        <span class="label reveal-up">Τι Προσφέρουμε</span>
+        <h2 class="reveal-text">Υπηρεσίες</h2>
       </div>
-      <div class="services-list">
+      <div class="services-list reveal-up">
         <div class="service-item">
           <div class="service-row">
             <span class="service-name">Ανδρικό Κούρεμα & Styling</span>
@@ -165,7 +184,7 @@
           </div>
         </div>
       </div>
-      <div class="services-cta">
+      <div class="services-cta reveal-up">
         <a href="https://1511stanzadellabarberia.setmore.com/" target="_blank" rel="noopener" class="btn">Κλείσε Ραντεβού</a>
       </div>
     </div>
@@ -174,63 +193,76 @@
   <!-- Reviews -->
   <section id="reviews">
     <div class="container">
-      <div class="reviews-header">
-        <div>
-          <span class="label">Google Reviews</span>
-          <h2>Τι Λένε οι <em>Πελάτες</em></h2>
-        </div>
-        <div class="reviews-score">
-          <span class="score-number">4.8</span>
-          <div class="score-meta">
-            <div class="score-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <span class="score-count">160+ αξιολογήσεις</span>
-          </div>
+      <div class="reviews-top reveal-up">
+        <div class="reviews-badge">
+          <span class="reviews-badge-score">4.8</span>
+          <div class="reviews-badge-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <span class="reviews-badge-count">160+ Google Reviews</span>
         </div>
       </div>
-      <div class="reviews-grid">
-        <blockquote class="review">
+      <div class="reviews-featured reveal-up">
+        <span class="reviews-quote-mark">&ldquo;</span>
+        <blockquote class="reviews-featured-quote" id="featured-review">
           <p>Καταπληκτικός χώρος, ευγενική και φιλική εξυπηρέτηση, τήρηση ραντεβού χωρίς αναμονή, πολύ καλό κούρεμα-ξύρισμα.</p>
         </blockquote>
-        <blockquote class="review">
-          <p>Εξαιρετικός και πολύ ευχάριστος χώρος, η εξυπηρέτηση άψογη. Ο Αλεξ είναι καταπληκτικός.</p>
+        <div class="reviews-nav">
+          <button class="reviews-nav-btn" id="review-prev" aria-label="Previous">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <span class="reviews-counter" id="review-counter">1 / 6</span>
+          <button class="reviews-nav-btn" id="review-next" aria-label="Next">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><polyline points="9 6 15 12 9 18"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="reviews-strip reveal-up">
+        <blockquote class="reviews-mini">
+          <p>Εξαιρετικός και πολύ ευχάριστος χώρος, η εξυπηρέτηση άψογη.</p>
         </blockquote>
-        <blockquote class="review">
-          <p>Απίστευτα εξυπηρετικοί και ευχάριστοι!! Ένα από τα καλύτερα Barber πού θα βρείτε στην Αθήνα!</p>
+        <blockquote class="reviews-mini">
+          <p>Ένα από τα καλύτερα Barber πού θα βρείτε στην Αθήνα!</p>
         </blockquote>
-        <blockquote class="review">
-          <p>Τα παιδιά παίρνουν άριστα σε όλα. Το περιβάλλον, η μουσική, η εξυπηρέτηση, ο επαγγελματισμός.</p>
-        </blockquote>
-        <blockquote class="review">
-          <p>Άριστος επαγγελματίας και καλλιτέχνης και τυπικός στα ραντεβού του. Το καλύτερο κομμωτήριο της πόλης.</p>
-        </blockquote>
-        <blockquote class="review">
-          <p>Πανέμορφο μαγαζί, τρομεροί κομμωτές, πεντακάθαρο και πολύ φιλικό κλίμα!</p>
+        <blockquote class="reviews-mini">
+          <p>Τα παιδιά παίρνουν άριστα σε όλα. Το περιβάλλον, η μουσική, ο επαγγελματισμός.</p>
         </blockquote>
       </div>
     </div>
   </section>
 
-  <!-- Gallery -->
+  <!-- Horizontal Scroll Gallery -->
   <section id="gallery">
     <div class="container">
       <div class="section-header-center">
-        <span class="label">Η Δουλειά Μας</span>
-        <h2>Fresh Cuts <em>in Action</em></h2>
+        <span class="label reveal-up">Η Δουλειά Μας</span>
+        <h2 class="reveal-text">Fresh Cuts <em>in Action</em></h2>
       </div>
-      <div class="gallery-strip">
-        <div class="gallery-card accent-border">
-          <img src="images/DSC01351.jpg.JPG" alt="Περιποίηση γενειάδας" loading="lazy">
-        </div>
-        <div class="gallery-card">
-          <img src="images/DSC01524-2.jpg.JPG" alt="Τεχνική ψαλιδιού" loading="lazy">
-        </div>
-        <div class="gallery-card accent-border">
-          <img src="images/DSC01560-3.jpg.JPG" alt="Σχηματισμός φρυδιών" loading="lazy">
-        </div>
-        <div class="gallery-card">
-          <img src="images/DSC01487-2.jpg.jpg" alt="Υποδοχή" loading="lazy">
+    </div>
+    <div class="gallery-wrapper">
+      <button class="gallery-btn gallery-btn-left" aria-label="Scroll left">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="gallery-scroll">
+        <div class="gallery-track">
+          <div class="gallery-item">
+            <img src="images/DSC01351.jpg.JPG" alt="Περιποίηση γενειάδας" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="images/DSC01524-2.jpg.JPG" alt="Τεχνική ψαλιδιού" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="images/DSC01560-3.jpg.JPG" alt="Σχηματισμός φρυδιών" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="images/DSC01487-2.jpg.jpg" alt="Υποδοχή" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="images/DSC01388.jpg.jpg" alt="Barbershop" loading="lazy">
+          </div>
         </div>
       </div>
+      <button class="gallery-btn gallery-btn-right" aria-label="Scroll right">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
     </div>
   </section>
 
@@ -238,72 +270,83 @@
   <section id="team">
     <div class="container">
       <div class="section-header-center">
-        <span class="label">Οι Καλλιτέχνες</span>
-        <h2>Η Ομάδα <em>Μας</em></h2>
+        <span class="label reveal-up">Οι Καλλιτέχνες</span>
+        <h2 class="reveal-text">Η Ομάδα <em>Μας</em></h2>
       </div>
       <div class="team-grid">
-        <div class="team-member">
-          <div class="team-photo accent-border">
+        <div class="team-member reveal-up">
+          <div class="team-photo">
             <img src="images/IMG_5908.jpeg" alt="Αλέξανδρος" loading="lazy">
+            <div class="team-overlay">
+              <span class="team-role">Κουρέας</span>
+            </div>
           </div>
-          <span class="team-name-small">Αλέξανδρος</span>
-          <h4>Κουρέας</h4>
+          <h4>Αλέξανδρος</h4>
         </div>
-        <div class="team-member">
+        <div class="team-member reveal-up">
           <div class="team-photo">
             <img src="images/IMG_8407.jpeg" alt="Νίκος" loading="lazy">
+            <div class="team-overlay">
+              <span class="team-role">Κουρέας</span>
+            </div>
           </div>
-          <span class="team-name-small">Νίκος</span>
-          <h4>Κουρέας</h4>
+          <h4>Νίκος</h4>
         </div>
-        <div class="team-member">
-          <div class="team-photo accent-border">
+        <div class="team-member reveal-up">
+          <div class="team-photo">
             <img src="images/IMG_0420.jpg" alt="Aleks" loading="lazy">
+            <div class="team-overlay">
+              <span class="team-role">Ιδρυτής & Master Barber</span>
+            </div>
           </div>
-          <span class="team-name-small">Aleks</span>
-          <h4>Ιδρυτής &<br>Master Barber</h4>
+          <h4>Aleks</h4>
         </div>
-        <div class="team-member">
+        <div class="team-member reveal-up">
           <div class="team-photo team-placeholder">
             <span>Ε</span>
+            <div class="team-overlay">
+              <span class="team-role">Κουρέας & Αισθητικός</span>
+            </div>
           </div>
-          <span class="team-name-small">Ελευθερία</span>
-          <h4>Κουρέας &<br>Αισθητικός</h4>
+          <h4>Ελευθερία</h4>
         </div>
-        <div class="team-member">
+        <div class="team-member reveal-up">
           <div class="team-photo">
             <img src="images/78AFB4B1-7401-4252-8395-367653C9338E.JPG" alt="Jessica" loading="lazy">
+            <div class="team-overlay">
+              <span class="team-role">Υποδοχή</span>
+            </div>
           </div>
-          <span class="team-name-small">Jessica</span>
-          <h4>Υποδοχή</h4>
+          <h4>Jessica</h4>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Booking CTA -->
-  <section id="booking">
-    <div class="container">
-      <div class="booking-layout">
-        <div class="booking-text">
-          <h2>Κράτηση &mdash;<br>Χωρίς Ταλαιπωρία,<br><em>Μόνο ένα Click</em></h2>
-          <p>Διάλεξε ημερομηνία, επέλεξε τον κουρέα σου και κλείσε τη θέση σου.</p>
-          <a href="https://1511stanzadellabarberia.setmore.com/" target="_blank" rel="noopener" class="btn">Κλείσε Ραντεβού</a>
-        </div>
-        <div class="booking-img accent-border">
-          <img src="images/DSC01351.jpg.JPG" alt="Barbershop" loading="lazy">
-        </div>
-      </div>
+  <!-- Cinematic Booking CTA -->
+  <section id="booking" class="cin-fullbleed cin-fullbleed-dark">
+    <div class="cin-fullbleed-img" data-parallax>
+      <img src="images/DSC01351.jpg.JPG" alt="Barbershop" loading="lazy">
+    </div>
+    <div class="cin-fullbleed-overlay cin-booking-content">
+      <span class="label reveal-up" style="color: var(--copper);">Online Booking</span>
+      <h2 class="cin-giant-text reveal-text">
+        Κράτηση &mdash;<br>
+        Χωρίς Ταλαιπωρία,<br>
+        <em>Μόνο ένα Click</em>
+      </h2>
+      <p class="reveal-up" style="color: rgba(250,248,242,0.6); margin-bottom: 2.5rem;">Διάλεξε ημερομηνία, επέλεξε τον κουρέα σου και κλείσε τη θέση σου.</p>
+      <a href="https://1511stanzadellabarberia.setmore.com/" target="_blank" rel="noopener" class="btn btn-light reveal-up">Κλείσε Ραντεβού</a>
     </div>
   </section>
 
   <!-- Contact -->
   <section id="contact">
     <div class="container">
-      <div class="contact-grid">
-        <div class="contact-info">
+      <div class="contact-layout">
+        <div class="contact-info reveal-up">
           <span class="label">Επισκεφθείτε Μας</span>
-          <h2>Επικοινωνία</h2>
+          <h2 class="reveal-text">Επικοινωνία</h2>
           <div class="contact-details">
             <div class="contact-item">
               <h4>Διεύθυνση</h4>
@@ -331,7 +374,7 @@
             </div>
           </div>
         </div>
-        <div class="contact-map">
+        <div class="contact-map reveal-up">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.5!2d23.7501!3d38.0101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a2f1a1a1a1a1%3A0x1234567890abcdef!2sKountouriotou%20100%2C%20Galatsi%2C%20Athens!5e0!3m2!1sen!2sgr!4v1700000000000!5m2!1sen!2sgr"
             width="100%"
