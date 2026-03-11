@@ -74,6 +74,8 @@ window.addEventListener('scroll', () => {
     nav.classList.remove('hidden');
   }
 
+  nav.classList.toggle('scrolled', current > 50);
+
   lastScroll = current;
 });
 
