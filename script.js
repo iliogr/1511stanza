@@ -374,7 +374,14 @@ const translations = {
     'm.2': 'Est. 2020',
     'm.3': 'Galatsi, Athens',
     'm.4': 'Sistine Chapel Inspired',
-    'm.5': 'A Ritual of Grooming'
+    'm.5': 'A Ritual of Grooming',
+    'nav.events': 'Events',
+    'events.label': 'Events',
+    'events.title': 'Community <em>& Action</em>',
+    'events.mov.month': 'Nov 2025',
+    'events.mov.title': 'Movember &mdash; A Day Dedicated to Men\'s Health',
+    'events.mov.desc': 'A special awareness event for men\'s health featuring live music, activities and social contribution. All proceeds were donated to IASIS and EPAPSY.',
+    'events.readmore': 'Read More &rarr;'
   },
   el: {
     'nav.about': 'Σχετικά',
@@ -430,7 +437,14 @@ const translations = {
     'm.2': 'Από το 2020',
     'm.3': 'Γαλάτσι, Αθήνα',
     'm.4': 'Εμπνευσμένο από την Καπέλα Σιξτίνα',
-    'm.5': 'Η Τέχνη της Περιποίησης'
+    'm.5': 'Η Τέχνη της Περιποίησης',
+    'nav.events': 'Εκδηλώσεις',
+    'events.label': 'Εκδηλώσεις',
+    'events.title': 'Κοινότητα <em>& Δράση</em>',
+    'events.mov.month': 'Νοε 2025',
+    'events.mov.title': 'Movember &mdash; Μια Ημέρα Αφιερωμένη στην Ανδρική Υγεία',
+    'events.mov.desc': 'Μια ξεχωριστή εκδήλωση ευαισθητοποίησης για την ανδρική υγεία με ζωντανή μουσική, δράσεις και κοινωνική προσφορά. Όλα τα έσοδα δόθηκαν στον ΙΑΣΙΣ και την ΕΠΑΨΥ.',
+    'events.readmore': 'Διαβάστε Περισσότερα &rarr;'
   }
 };
 

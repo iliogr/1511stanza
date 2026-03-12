@@ -1145,6 +1145,110 @@ img[data-face="jessica"] { transform: scale(1.6); transform-origin: 100% 70%; }
 }
 
 /* =========================
+   Events
+   ========================= */
+
+#events {
+  padding: 6rem 0;
+  background: var(--cream);
+}
+
+.events-grid {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.event-card {
+  display: flex;
+  gap: 2rem;
+  padding: 2.5rem;
+  background: var(--bg);
+  border: 1px solid rgba(42, 37, 32, 0.08);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--text);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(42, 37, 32, 0.1);
+  border-color: rgba(42, 37, 32, 0.15);
+}
+
+.event-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  padding: 1rem;
+  background: var(--text);
+  color: var(--bg);
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.event-day {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.event-month {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 0.25rem;
+}
+
+.event-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+.event-info p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(42, 37, 32, 0.65);
+  margin-bottom: 1rem;
+}
+
+.event-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #a37691;
+  transition: color 0.3s ease;
+}
+
+.event-card:hover .event-link {
+  color: #8a6079;
+}
+
+@media (max-width: 600px) {
+  .event-card {
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.5rem;
+  }
+
+  .event-date {
+    flex-direction: row;
+    gap: 0.5rem;
+    min-width: auto;
+    padding: 0.75rem 1.25rem;
+  }
+}
+
+/* =========================
    Contact
    ========================= */
 
