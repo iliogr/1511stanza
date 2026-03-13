@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iliogr.github.io/1511stanza/sitemap.xml
