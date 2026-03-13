@@ -314,6 +314,7 @@ const translations = {
     'hero.w2': 'Ritual',
     'hero.w3': 'of',
     'hero.w4': 'Grooming',
+    'hero.tagline': 'A Ritual of Grooming',
     'm.1': 'Renaissance Grooming',
     'm.2': 'Est. 2020',
     'm.3': 'Galatsi, Athens',
@@ -377,6 +378,7 @@ const translations = {
     'hero.w2': 'Τέχνη',
     'hero.w3': 'της',
     'hero.w4': 'Περιποίησης',
+    'hero.tagline': 'Η Τέχνη της Περιποίησης',
     'm.1': 'Αναγεννησιακή Περιποίηση',
     'm.2': 'Από το 2020',
     'm.3': 'Γαλάτσι, Αθήνα',
@@ -411,6 +413,26 @@ const reviewsEl = [
 ];
 
 let currentLang = 'el';
+let typewriterTimeout = null;
+
+function typewriterEffect(element, text, delay) {
+  if (typewriterTimeout) clearTimeout(typewriterTimeout);
+  element.innerHTML = '<span class="typewriter-cursor"></span>';
+
+  let i = 0;
+  const cursor = element.querySelector('.typewriter-cursor');
+  function type() {
+    if (i < text.length) {
+      const textNode = document.createTextNode(text[i]);
+      element.insertBefore(textNode, cursor);
+      i++;
+      typewriterTimeout = setTimeout(type, 120);
+    } else {
+      setTimeout(() => cursor.remove(), 2000);
+    }
+  }
+  typewriterTimeout = setTimeout(type, delay);
+}
 
 function setLanguage(lang) {
   currentLang = lang;
@@ -431,6 +453,14 @@ function setLanguage(lang) {
     featuredQuote.querySelector('p').textContent = reviews[currentReview];
   }
 
+  // Update typewriter tagline
+  if (!initialLoad) {
+    const taglineEl = document.getElementById('hero-tagline');
+    if (taglineEl && translations[lang]['hero.tagline']) {
+      typewriterEffect(taglineEl, translations[lang]['hero.tagline'], 0);
+    }
+  }
+
   // Update toggle button text
   const toggleBtn = document.getElementById('lang-toggle');
   toggleBtn.textContent = lang === 'el' ? 'EN' : 'GR';
@@ -443,10 +473,17 @@ langToggle.addEventListener('click', () => {
   setLanguage(currentLang === 'el' ? 'en' : 'el');
 });
 
-// Restore saved language
+// Restore saved language & initial typewriter
+let initialLoad = true;
 const savedLang = localStorage.getItem('lang');
 if (savedLang && savedLang !== 'el') {
   setLanguage(savedLang);
+}
+initialLoad = false;
+
+const taglineEl = document.getElementById('hero-tagline');
+if (taglineEl) {
+  typewriterEffect(taglineEl, translations[savedLang || 'el']['hero.tagline'], 0);
 }
 
 // =========================
