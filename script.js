@@ -378,12 +378,12 @@ const translations = {
     'hero.w2': 'Τέχνη',
     'hero.w3': 'της',
     'hero.w4': 'Περιποίησης',
-    'hero.tagline': 'Η Τέχνη της Περιποίησης',
-    'm.1': 'Αναγεννησιακή Περιποίηση',
-    'm.2': 'Από το 2020',
-    'm.3': 'Γαλάτσι, Αθήνα',
-    'm.4': 'Εμπνευσμένο από την Καπέλα Σιξτίνα',
-    'm.5': 'Η Τέχνη της Περιποίησης',
+    'hero.tagline': 'A Ritual of Grooming',
+    'm.1': 'Renaissance Grooming',
+    'm.2': 'Est. 2020',
+    'm.3': 'Galatsi, Athens',
+    'm.4': 'Sistine Chapel Inspired',
+    'm.5': 'A Ritual of Grooming',
     'nav.events': 'Εκδηλώσεις',
     'events.label': 'Εκδηλώσεις',
     'events.title': 'Κοινότητα <em>& Δράση</em>',
@@ -483,7 +483,7 @@ initialLoad = false;
 
 const taglineEl = document.getElementById('hero-tagline');
 if (taglineEl) {
-  typewriterEffect(taglineEl, translations[savedLang || 'el']['hero.tagline'], 0);
+  typewriterEffect(taglineEl, 'A Ritual of Grooming', 0);
 }
 
 // =========================
