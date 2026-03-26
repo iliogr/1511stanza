@@ -23,7 +23,8 @@
       "Bash(curl -L -o /Users/iliogr/Documents/Github/1511stanza/images/bg2.jpg \"https://s.yimg.com/ny/api/res/1.2/M7K5Wr8vuaOi26UxvCMUjw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTEwOTc7Y2Y9d2VicA--/https://s.yimg.com/os/251/2012/11/01/Sistine3-01112012-jpg_103548.jpg\" 2>&1)",
       "WebFetch(domain:www.iasismed.eu)",
       "Bash(python3 -m http.server 8765)",
-      "mcp__plugin_playwright_playwright__browser_snapshot"
+      "mcp__plugin_playwright_playwright__browser_snapshot",
+      "Bash(grep -E \"\\\\.\\(html|tsx|jsx|json|xml\\)$\")"
     ]
   }
 }
