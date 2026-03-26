@@ -40,79 +40,175 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
-  <!-- Structured Data: BarberShop -->
+  <!-- Structured Data: LocalBusiness / BarberShop -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BarberShop",
-    "name": "1511 Stanza Della Barberia",
-    "image": "https://iliogr.github.io/1511stanza/images/og-image.jpg",
-    "url": "https://iliogr.github.io/1511stanza/",
-    "@id": "https://iliogr.github.io/1511stanza/#barbershop",
-    "telephone": ["+302114175192", "+306984875827"],
-    "email": "1511stanzadellabarberia@gmail.com",
+    "@type": "LocalBusiness",
+    "additionalType": "https://schema.org/BarberShop",
+    "@id": "https://www.1511stanzadellabarberia.com/#localbusiness",
+    "name": "1511 stanza della barberia",
+    "url": "https://www.1511stanzadellabarberia.com/",
+    "description": "Το 1511 stanza della barberia είναι barber shop στο Γαλάτσι που συνδυάζει την αυθεντική old school ατμόσφαιρα με σύγχρονες τεχνικές περιποίησης. Ο χώρος μας δημιουργήθηκε αποκλειστικά για την ολοκληρωμένη περιποίηση του άντρα, προσφέροντας επαγγελματικό κούρεμα, παραδοσιακό ξύρισμα με ξυράφι και εξειδικευμένη περιποίηση γενειάδας. Κάθε υπηρεσία εκτελείται με προσοχή στη λεπτομέρεια και μαεστρία, συνδυάζοντας την κλασική τέχνη του μπαρμπέρη με τις σύγχρονες ανάγκες του σημερινού άντρα. Στο κουρείο μας στο Γαλάτσι, η εμπειρία περιποίησης ξεπερνά το απλό κούρεμα και μετατρέπεται σε στιγμή χαλάρωσης και ανανέωσης. Επισκεφθείτε μας για ανδρικές κομμώσεις που αναδεικνύουν την προσωπικότητα και το στυλ σας.",
+    "telephone": "+30 211 417 5192",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Kountouriotou 100",
-      "addressLocality": "Galatsi",
-      "addressRegion": "Attica",
-      "postalCode": "11146",
+      "streetAddress": "Κουντουριώτου 100",
+      "addressLocality": "Αθήνα",
+      "postalCode": "111 46",
       "addressCountry": "GR"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 38.0101,
-      "longitude": 23.7501
-    },
-    "priceRange": "€€",
-    "currenciesAccepted": "EUR",
-    "paymentAccepted": "Cash, Credit Card",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "https://schema.org/Tuesday",
+        "opens": "10:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "https://schema.org/Wednesday",
+        "opens": "10:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "https://schema.org/Thursday",
+        "opens": "10:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "https://schema.org/Friday",
+        "opens": "10:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "https://schema.org/Saturday",
+        "opens": "10:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=100058823749502",
+      "https://www.instagram.com/1511_stanza_della_barberia/"
+    ],
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
-      "reviewCount": "160",
-      "bestRating": "5"
-    },
-    "sameAs": [
-      "https://www.instagram.com/1511stanzadelbarbiere/",
-      "https://www.facebook.com/profile.php?id=100058823749502",
-      "https://www.youtube.com/@1511stanzadellabarberia",
-      "https://www.tiktok.com/@1511stanzadellabarberia"
-    ],
-    "description": "Renaissance-inspired barbershop in Galatsi, Athens. Inspired by the Sistine Chapel, offering men's haircuts, beard grooming, traditional shaving, threading, and facial treatments since 2020.",
-    "foundingDate": "2020",
-    "areaServed": {
-      "@type": "City",
-      "name": "Athens"
+      "reviewCount": "183",
+      "bestRating": "5",
+      "worstRating": "1"
     },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Barbershop Services",
+      "name": "Υπηρεσίες",
       "itemListElement": [
         {
           "@type": "Offer",
-          "itemOffered": { "@type": "Service", "name": "Men's Haircut & Styling" },
-          "price": "17", "priceCurrency": "EUR"
+          "price": "15",
+          "priceCurrency": "EUR",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Παιδικό Κούρεμα",
+            "timeRequired": "PT30M"
+          }
         },
         {
           "@type": "Offer",
-          "itemOffered": { "@type": "Service", "name": "Beard Grooming" },
-          "price": "10", "priceCurrency": "EUR"
+          "price": "17",
+          "priceCurrency": "EUR",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Ανδρικό Κούρεμα 30' & Styling",
+            "timeRequired": "PT30M"
+          }
         },
         {
           "@type": "Offer",
-          "itemOffered": { "@type": "Service", "name": "Special Shave", "description": "Traditional shave with hot compress, massage, facial cleansing and threading" },
-          "price": "17", "priceCurrency": "EUR"
+          "price": "17",
+          "priceCurrency": "EUR",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Ξύρισμα Special 30'",
+            "description": "Παραδοσιακό ξύρισμα με ζεστή κομπρέσα, μασάζ, καθαρισμός προσώπου και αποτρίχωση με κλωστή.",
+            "timeRequired": "PT30M"
+          }
         },
         {
           "@type": "Offer",
-          "itemOffered": { "@type": "Service", "name": "Black Mask Facial Treatment" },
-          "price": "10", "priceCurrency": "EUR"
+          "price": "13",
+          "priceCurrency": "EUR",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Ξύρισμα απλό 15'",
+            "timeRequired": "PT15M"
+          }
         },
         {
           "@type": "Offer",
-          "itemOffered": { "@type": "Service", "name": "Eyebrow Shaping" },
-          "price": "7", "priceCurrency": "EUR"
+          "price": "10",
+          "priceCurrency": "EUR",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Περιποίηση προσώπου Black Mask 30'",
+            "timeRequired": "PT30M"
+          }
+        },
+        {
+          "@type": "Offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": "5",
+            "maxPrice": "10",
+            "priceCurrency": "EUR"
+          },
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Αποτρίχωση με κλωστή 30'",
+            "timeRequired": "PT30M"
+          }
+        },
+        {
+          "@type": "Offer",
+          "price": "7",
+          "priceCurrency": "EUR",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Σχήμα Φρυδιών 30'",
+            "timeRequired": "PT30M"
+          }
+        },
+        {
+          "@type": "Offer",
+          "price": "10",
+          "priceCurrency": "EUR",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Περιποίηση Γενειάδας 30'",
+            "timeRequired": "PT30M"
+          }
+        },
+        {
+          "@type": "Offer",
+          "price": "10",
+          "priceCurrency": "EUR",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Περιμετρικό καθάρισμα (αυχένας - φαβορίτες) 30'",
+            "timeRequired": "PT30M"
+          }
+        },
+        {
+          "@type": "Offer",
+          "price": "10",
+          "priceCurrency": "EUR",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Κούρεμα με μηχανή 30'",
+            "timeRequired": "PT30M"
+          }
         }
       ]
     }
