@@ -965,7 +965,7 @@ section {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 1.5rem;
 }
 
@@ -1006,19 +1006,8 @@ section {
   filter: blur(0) grayscale(0%);
 }
 
-/* Per-person framing — initial (zoomed for entrance animation) */
-img[data-face="alexandros"] { transform: scale(1.85); transform-origin: center 95%; }
-img[data-face="nikos"] { transform: scale(1.45); transform-origin: center 30%; }
-img[data-face="aleks"] { transform: scale(1.45); }
-img[data-face="eleftheria"] { transform: scale(1.45); }
-img[data-face="jessica"] { transform: scale(1.6); transform-origin: 100% 70%; }
-
-/* Per-person framing — settled state (all zoomed 1.15x for crop room) */
-.team-member.visible img[data-face="alexandros"] { transform: scale(1.45); transform-origin: center 95%; }
-.team-member.visible img[data-face="nikos"] { transform: scale(1.15); transform-origin: center 30%; }
-.team-member.visible img[data-face="aleks"] { transform: scale(1.15); }
-.team-member.visible img[data-face="eleftheria"] { transform: scale(1.15); }
-.team-member.visible img[data-face="jessica"] { transform: scale(1.3); transform-origin: 100% 70%; }
+/* Same studio crop for everyone — settles from the entrance zoom */
+.team-member.visible .team-photo img { transform: scale(1); }
 
 /* Name + role fade up */
 .team-member h4 {
@@ -1049,6 +1038,9 @@ img[data-face="jessica"] { transform: scale(1.6); transform-origin: 100% 70%; }
 .team-member:nth-child(5) h4 { transition-delay: 1.1s; }
 .team-member:nth-child(5) h4 { transition-delay: 1.15s; }
 
+.team-member:nth-child(6) .team-photo { transition-delay: 0.75s; }
+.team-member:nth-child(6) h4 { transition-delay: 1.25s; }
+
 .team-placeholder {
   display: flex;
   align-items: center;
@@ -1070,6 +1062,7 @@ img[data-face="jessica"] { transform: scale(1.6); transform-origin: 100% 70%; }
   object-fit: cover;
   opacity: 0;
   transform: scale(1.35);
+  transform-origin: center 25%;
   filter: blur(6px) grayscale(100%);
   transition: opacity 0.6s ease 0.3s,
               transform 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.2s,
@@ -1667,6 +1660,11 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .team-member .team-photo,
+  .team-member h4 {
+    transition-delay: 0s !important;
+  }
+
   .review-card {
     min-width: 280px;
     max-width: 300px;
@@ -1690,9 +1688,9 @@ footer {
 
 @media (max-width: 480px) {
   .team-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.25rem;
+    grid-template-columns: 1fr;
   }
+
 
   .gallery-item {
     width: 260px;

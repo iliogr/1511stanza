@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://iliogr.github.io/1511stanza/sitemap.xml
+Sitemap: https://1511stanzadellabarberia.com/sitemap.xml
